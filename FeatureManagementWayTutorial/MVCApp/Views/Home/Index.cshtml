@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<feature name="FeatureA">
+    <div class="text-center">
+        <h1 style="color:olivedrab"  class="display-4">Welcome Feature A</h1>
+    </div>
+</feature>
+
+<feature name="FeatureB">
+    <div class="text-center">
+        <h1 style="color:orange" class="display-4">Welcome Feature B</h1>
+    </div>
+</feature>
+
+<feature name="FeatureA, FeatureB" requirement="All">
+    <h1 style="color:gray">This can only be seen if 'FeatureA' and 'FeatureB' are enabled.</h1>
+</feature>
+<br/>
+<feature name="FeatureA, FeatureB" requirement="Any">
+    <h1 style ="color:green">This can be seen if 'FeatureA', 'FeatureB', or both are enabled. With Any</h1>
+</feature>
